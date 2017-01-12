@@ -1,7 +1,8 @@
 # VueFire6Pack-Demo
 
 > Todos project ( Vue + VueFire + ES6 + Webpack )
-> Based on [VueFire](https://github.com/vuejs/vuefire)
+> Based on [VueFire](https://github.com/vuejs/vuefire)  
+> This project is using `airbnb lint`
 
 ## Build Setup
 
@@ -24,15 +25,17 @@ npm run build
 # install firebase-tools
 npm install -g firebase-tools
 
-# then, 
+# first, need a login 
 firebase login
+
+# then,
+firebase init
+# ( Select the 'dist' directory )
 
 # and then,
 firebase deploy 
-
-#(Select the 'dist' directory
  
-#Is that all? Yes!
+#Is that all? Yes! :tada:
 #Please check out the command line.
 
 ```

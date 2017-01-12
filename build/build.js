@@ -33,4 +33,4 @@ webpack(webpackConfig, function (err, stats) {
     chunks: false,
     chunkModules: false
   }) + '\n')
-})
+});
