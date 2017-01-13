@@ -1,5 +1,7 @@
 # VueFire6Pack-Demo
 
+[![Build Status](https://travis-ci.org/kangsLee/VueFire6Pack-Demo.svg?branch=master)](https://travis-ci.org/kangsLee/VueFire6Pack-Demo)
+
 > Todos project ( Vue + Firebase + ES6 + Webpack )
 > This project is using `airbnb lint`
 
