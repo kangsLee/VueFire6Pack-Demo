@@ -8,7 +8,8 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "test": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "coveralls": "npm run test -- --report lcovonly && cat ./test/unit/coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "firebase": "^3.6.5",
@@ -43,10 +44,6 @@
     "file-loader": "^0.9.0",
     "friendly-errors-webpack-plugin": "^1.1.2",
     "function-bind": "^1.0.2",
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-nodeunit": "^1.0.0",
-    "grunt-karma-coveralls": "^2.5.4",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.17.2",
     "inject-loader": "^2.0.1",
