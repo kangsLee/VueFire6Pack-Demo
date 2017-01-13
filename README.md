@@ -1,4 +1,4 @@
-# VueFire6Pack-Demo
+# VueFire6Pack-Demo ( with VueFire )
 
 > Todos project ( Vue + VueFire + ES6 + Webpack )
 > Based on [VueFire](https://github.com/vuejs/vuefire)  
