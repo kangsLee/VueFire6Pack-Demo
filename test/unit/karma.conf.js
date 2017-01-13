@@ -49,7 +49,7 @@ module.exports = function (config) {
 
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'sinon-chai'],
-    reporters: ['spec', 'coverage'],
+    reporters: ['spec', 'coverage', 'coveralls'],
     files: ['./index.js'],
     preprocessors: {
       './index.js': ['webpack', 'sourcemap']

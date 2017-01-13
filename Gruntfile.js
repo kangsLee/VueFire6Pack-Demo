@@ -11,4 +11,8 @@ module.exports = function(grunt) {
       }
     }
   });
+
+  grunt.loadNpmTasks('grunt-karma-coveralls');
+
+  grunt.registerTask('default', ['coveralls']);
 };
