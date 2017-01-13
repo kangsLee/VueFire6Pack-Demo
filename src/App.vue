@@ -7,11 +7,11 @@
       @keyup.enter="addTodo"
       placeholder="Add new todo">
     <ul>
-      <li v-for="(todo, index) in todos">
+      <li v-for="(todo, key) in todos">
         <input
           :value="todo.text"
-          @input="updateTodoText(todo, $event.target.value)">
-        <button @click="removeTodo(todo)">X</button>
+          @input="updateTodoText(key, $event.target.value)">
+        <button @click="removeTodo(key)">X</button>
       </li>
     </ul>
   </div>
@@ -38,28 +38,33 @@ export default {
   data() {
     return {
       newTodoText: '',
+      todos: [],
     };
   },
   components: {
     Hello,
   },
-  firebase: {
-    todos: todosRef.limitToLast(25),
+  created() {
+    todosRef.limitToLast(25).on('value', (snapshot) => {
+      this.todos = snapshot.val();
+    });
   },
   methods: {
     addTodo() {
       if (this.newTodoText) {
-        todosRef.push({
+        return todosRef.push({
           text: this.newTodoText,
+        }, () => {
+          this.newTodoText = '';
         });
-        this.newTodoText = '';
       }
+      return Promise.resolve(undefined);
     },
-    updateTodoText(todo, newText) {
-      todosRef.child(todo['.key']).child('text').set(newText);
+    updateTodoText(key, newText) {
+      return todosRef.child(key).child('text').set(newText);
     },
-    removeTodo(todo) {
-      todosRef.child(todo['.key']).remove();
+    removeTodo(key) {
+      return todosRef.child(key).remove();
     },
   },
 };
