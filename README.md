@@ -1,7 +1,6 @@
 # VueFire6Pack-Demo
 
-> Todos project ( Vue + VueFire + ES6 + Webpack )
-> Based on [VueFire](https://github.com/vuejs/vuefire)  
+> Todos project ( Vue + Firebase + ES6 + Webpack )
 > This project is using `airbnb lint`
 
 ## Build Setup
@@ -15,6 +14,15 @@ npm run dev
 
 # build for production with minification
 npm run build
+```
+
+## Unit test
+
+``` bash
+# just run this line.
+cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run
+
+# and check out report html in 'test/coverage' directory
 ```
 
 ## Deploy
