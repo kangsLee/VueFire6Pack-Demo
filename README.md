@@ -6,6 +6,9 @@
 > Todos project ( Vue + Firebase + ES6 + Webpack )
 > This project is using `airbnb lint`
 
+> Do you want to use the VueFire?  
+> [VueFire Branch](https://github.com/kangsLee/VueFire6Pack-Demo/tree/VueFire)
+
 ## Build Setup
 
 ``` bash
