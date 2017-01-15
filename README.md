@@ -3,11 +3,13 @@
 [![Build Status](https://travis-ci.org/kangsLee/VueFire6Pack-Demo.svg?branch=master)](https://travis-ci.org/kangsLee/VueFire6Pack-Demo)
 [![Coverage Status](https://coveralls.io/repos/github/kangsLee/VueFire6Pack-Demo/badge.svg?branch=master)](https://coveralls.io/github/kangsLee/VueFire6Pack-Demo?branch=master)
 
-> Todos project ( Vue + Firebase + ES6 + Webpack )
-> This project is using `airbnb lint`
+> Todos project ( Vue + Firebase + ES6 + Webpack )  
+> This project applies `Airbnb's ESLint` Rules  
+> and I am using Karma, mocha, phantomjs, sinon-chai and karma-coverage for testing with coverage checking
 
+--- 
 > Do you want to use the VueFire?  
-> [VueFire Branch](https://github.com/kangsLee/VueFire6Pack-Demo/tree/VueFire)
+> Check out here -> [VueFire Branch](https://github.com/kangsLee/VueFire6Pack-Demo/tree/VueFire)
 
 ## Build Setup
 
@@ -33,7 +35,7 @@ cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run
 
 ## Deploy
 
-> You want to deploy using firebase hosting?
+>  Do you want to deploy using firebase hosting?
 
 ```bash
 # install firebase-tools
